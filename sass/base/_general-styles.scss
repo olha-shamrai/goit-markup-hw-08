@@ -1,0 +1,46 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--main-text-color);
+    background-color: var(--background-main-color);
+
+    letter-spacing: 0.03em;
+}
+
+.section {
+    padding: 94px 0;
+}
+
+.container {
+    width: 1200px;
+    padding: 0 15px;
+    /*border: 1px solid red;*/
+    margin: 0 auto;
+}
+
+.section__title {
+    color: var(--title-text-color);
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1.16;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.hidden-elem {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    opacity: 0;
+    margin-top: -1px;
+}
+
+nav,
+.site-nav,
+.contacts,
+header .container {
+    background-color: var(--background-main-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}

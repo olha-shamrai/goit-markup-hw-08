@@ -1,0 +1,30 @@
+.works {
+    @include FlexCenter(space-between);
+    /*display: flex;
+    justify-content: space-between;*/
+}
+
+.works__item {
+    position: relative;
+}
+
+.works__label {
+    @include FlexCenter(center);
+
+    position: absolute;
+    bottom: 0;
+    width: 370px;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+    
+}
+
+.works__description {
+    color: var(--background-main-color);
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+}

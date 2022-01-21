@@ -1,0 +1,134 @@
+.footer {
+    background-color: var(--background-accent-color);
+    padding: 60px 0;
+}
+
+.footer__container {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer__address {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+}
+
+.address {
+    margin-top: 20px;
+}
+
+.address__list {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--background-main-color);
+}
+
+.address__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.footer__logo {
+    display: inline-block;
+}
+
+.join {
+    margin-left: 70px;
+}
+
+.join__title,
+.subscribe__title {
+    color: var(--background-main-color);
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.join__social-link {
+    background-color: rgba(255, 255, 255, 0.1);
+
+    @include Transformation(background-color);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+    }
+}
+
+.join__icon {
+    fill: var(--background-main-color);
+}
+
+.subscribe {
+    margin-left: 93px;
+    display: flex;
+    flex-direction: column;
+}
+
+.subscribe__form {
+    display: inline-flex;
+}
+
+.subscribe__input {
+    width: 358px;
+    height: 50px;
+    background-color: var(--background-accent-color);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 15px 16px;
+    color: var(--background-main-color);
+
+    &::placeholder {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 1.25;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+    }
+}
+
+.subscribe__button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    font-family: inherit;
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 10px 29px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: var(--background-main-color);
+    
+    margin-left: 12px;
+
+    @include Transformation(background-color);
+
+    &:hover,
+    &:focus {
+        background-color: #188CE8;
+    }
+}
+
+.subscribe__icon {
+    width: 24px;
+    height: 24px;
+    fill: var(--background-main-color);
+    margin-left: 10px;
+}
