@@ -7,14 +7,32 @@ body {
 }
 
 .section {
-    padding: 94px 0;
+
+    @media screen and (min-width: 480px) {
+       padding: 60px 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding: 94px 0;
+    }
 }
 
 .container {
-    width: 1200px;
-    padding: 0 15px;
     /*border: 1px solid red;*/
+    padding: 0 15px;
     margin: 0 auto;
+
+    @media screen and (min-width: 480px) {
+        width: 480px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
 }
 
 .section__title {
@@ -22,6 +40,7 @@ body {
     font-size: 36px;
     font-weight: bold;
     line-height: 1.16;
+    letter-spacing: 0.03em;
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
@@ -35,7 +54,7 @@ body {
     margin-top: -1px;
 }
 
-nav,
+/*nav,
 .site-nav,
 .contacts,
 header .container {
@@ -43,4 +62,4 @@ header .container {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-}
+}*/

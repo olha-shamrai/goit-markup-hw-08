@@ -1,3 +1,9 @@
+.section-works {
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+}
+
 .works {
     @include FlexCenter(space-between);
     /*display: flex;
