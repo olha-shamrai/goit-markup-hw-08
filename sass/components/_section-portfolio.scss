@@ -9,6 +9,7 @@
 }
 
 .portfolio__item {
+    display: flex;
     background-color: var(--background-main-color);
 
     &:not(:last-child) {
@@ -43,7 +44,12 @@
 }
 
 .portfolio__link {
-    height: 100%;
+    display: flex;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
 }
 
 .product__thumb {
@@ -87,7 +93,10 @@
 }
 
 .product__label {
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    
     padding: 20px 24px;
     border: 1px solid #EEEEEE;
     border-top: transparent;
