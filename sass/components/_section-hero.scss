@@ -1,6 +1,6 @@
 .hero {
     max-width: 1600px;
-    height: 600px;
+    height: 400px;
     margin-left: auto;
     margin-right: auto;
 
@@ -12,19 +12,29 @@
 
     display: flex;
     text-align: center;
-    padding: 200px 0;
+    padding: 118px 0;
+
+    @media screen and (min-width: 1200px) {
+        height: 600px;
+        padding: 200px 0;
+    }
 }
 
 .hero__title {
     color: var(--background-main-color);
     font-style: normal;
-    font-size: 44px;
     font-weight: 900;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.62;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 30px;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 44px;
+        line-height: 1.36;
+    }
 }
 
 .submit {
