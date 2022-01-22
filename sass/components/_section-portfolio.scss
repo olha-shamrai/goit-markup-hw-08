@@ -11,6 +11,13 @@
 .portfolio__item {
     background-color: var(--background-main-color);
 
+    &:not(:last-child) {
+        margin-bottom: var(--card-set-gap);
+        @media screen and (min-width: 768px) {
+            margin-bottom: 0;
+        }
+    }
+
     @media screen and (min-width: 480px) {
         width: 100%;
     }
@@ -36,13 +43,12 @@
 }
 
 .portfolio__link {
-    
+    height: 100%;
 }
 
 .product__thumb {
     position: relative;
     overflow: hidden;
-  
 }
 
 .product__overlay {
@@ -53,7 +59,7 @@
     height: 100%;
     background-color: rgba(33, 150, 243, 0.9);
 
-    transform: translatey(100%);
+    transform: translatey(101%);
     transition: transform 250ms ease;
 
     .portfolio__link:hover &,
@@ -63,16 +69,25 @@
 }
 
 .product__text {
-    padding: 63px 24px;
     margin: 0;
 
     font-size: 18px;
     line-height: 1.55;
     letter-spacing: 0.03em;
     color: var(--background-main-color);
+
+    padding: 77px 24px;
+    @media screen and (min-width: 768px) {
+        padding: 49px 24px;
+    }
+    @media screen and (min-width: 1200px) {
+        padding: 63px 24px;
+    }
+
 }
 
 .product__label {
+    height: 100%;
     padding: 20px 24px;
     border: 1px solid #EEEEEE;
     border-top: transparent;
