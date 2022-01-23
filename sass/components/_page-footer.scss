@@ -4,6 +4,10 @@
 }
 
 .footer__container {
+    width: 480px;
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
     @media screen and (min-width: 1200px) {
         display: flex;
         align-items: baseline;
@@ -14,7 +18,8 @@
     @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-between;
+        align-items: flex-start;
         
       }
 }
@@ -104,7 +109,7 @@
     margin-top: 60px;
 
     @media screen and (min-width: 768px) {
-        margin-top: 0;
+        margin: 0 auto;
         max-width: 450px;
       }
       @media screen and (min-width: 1200px) {
@@ -116,7 +121,7 @@
 }
 
 .subscribe__form {
-
+    
     @media screen and (min-width: 1200p) {
     display: inline-flex;
     justify-content: center;
@@ -175,7 +180,8 @@
     margin-right: auto;
 
     @media screen and (min-width: 1200px) {
-    margin-left: 12px;
+        margin-top: 0;
+        margin-left: 12px;
     }
 
     @include Transformation(background-color);
