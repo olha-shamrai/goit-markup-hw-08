@@ -8,7 +8,7 @@
     background-color: rgba(0, 0, 0, 0.2);
     overflow-y: scroll;
 
-    padding: 93px 15px;
+    padding: 93px 15px auto 15px;
     @media screen and (min-width: 768px) {
         padding: 207px 159px;
       }
@@ -209,8 +209,8 @@
 
 .checkbox {
     position: absolute;
-    top: 0px;
-    left: 2px;
+    top: 0;
+    left: 0;
     width: 16px;
     height: 15px;
     
@@ -218,6 +218,10 @@
     -webkit-appearance: none;
     appearance: none;
 
+    @media screen and (min-width: 480px) {
+        top: 0;
+        left: 2px;
+    }
     @media screen and (min-width: 1200px) {
         top: 4px;
         left: 9px;
@@ -232,8 +236,8 @@
 
 .checkbox__icon {
     position: absolute;
-    top: 0px;
-    left: 2px;
+    top: 0;
+    left: 0;
     opacity: 0;
     pointer-events: none;
     
@@ -242,6 +246,10 @@
     border: 2px solid #2196F3;
     border-radius: 2px;
 
+    @media screen and (min-width: 480px) {
+        top: 0;
+        left: 2px;
+    }
     @media screen and (min-width: 1200px) {
         top: 4px;
         left: 9px;

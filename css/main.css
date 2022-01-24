@@ -1920,7 +1920,7 @@ body {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   overflow-y: scroll;
-  padding: 93px 15px;
+  padding: 93px 15px auto 15px;
   opacity: 1;
   -webkit-transition-property: opacity;
   -o-transition-property: opacity;
@@ -2215,13 +2215,20 @@ body {
 
 .checkbox {
   position: absolute;
-  top: 0px;
-  left: 2px;
+  top: 0;
+  left: 0;
   width: 16px;
   height: 15px;
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
+}
+
+@media screen and (min-width: 480px) {
+  .checkbox {
+    top: 0;
+    left: 2px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -2240,8 +2247,8 @@ body {
 
 .checkbox__icon {
   position: absolute;
-  top: 0px;
-  left: 2px;
+  top: 0;
+  left: 0;
   opacity: 0;
   pointer-events: none;
   background-color: var(--accent-color);
@@ -2249,6 +2256,13 @@ body {
   border: 2px solid #2196F3;
   -webkit-border-radius: 2px;
           border-radius: 2px;
+}
+
+@media screen and (min-width: 480px) {
+  .checkbox__icon {
+    top: 0;
+    left: 2px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
