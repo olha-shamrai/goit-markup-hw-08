@@ -6,30 +6,33 @@
 .footer__container {
     max-width: 480px;
     @media screen and (min-width: 768px) {
-        width: 768px;
+        max-width: 768px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
     }
     @media screen and (min-width: 1200px) {
-        width: 1200px;
+        max-width: 1200px;
         display: flex;
         flex-wrap: nowrap;
         justify-content: space-between;
         align-items: baseline;
-    }
+    }  
 }
 
 .footer__address {
     @include FlexCenter(center);
     flex-direction: column;
     
+    @media screen and (min-width: 768px) {}
+    
+    @media screen and (min-width: 1200px) {}
+}
 
-    /*@media screen and (min-width: 768px) {
-        margin-left: 60px;
-    }*/
+.footer__logo {
     @media screen and (min-width: 1200px) {
-        
+        display: inline-flex;
+        align-self: start;
     }
 }
 
@@ -42,6 +45,7 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 1.71;
+    letter-spacing: 0.03em;
     color: var(--background-main-color);
 
     text-align: center;
@@ -51,7 +55,21 @@
 }
 
 .address__item:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 9px;
+      }
+}
+
+.address__contact {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    padding: 0;
 }
 
 .footer__logo {
@@ -101,26 +119,28 @@
 
 .subscribe {
     margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
 
     @media screen and (min-width: 768px) {
-        
         max-width: 450px;
-      }
-      @media screen and (min-width: 1200px) {
-        display: flex;
+    }
+
+    @media screen and (min-width: 1200px) {
         flex-direction: column;
         margin-left: 93px;
         max-width: 100%;
-      }
+    }
 }
 
 .subscribe__form {
-    
-    @media screen and (min-width: 1200p) {
+
+  @media screen and (min-width: 1200px) {
     display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    }
+    margin-top: 0;
+  }
 }
 
 .subscribe__input {

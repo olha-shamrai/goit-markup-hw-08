@@ -12,7 +12,7 @@
 }
 
 .clients__item {
-
+        height: 92px;
         flex-basis: calc(100% / 2 - var(--card-set-gap));
         margin-left: var(--card-set-gap);
         margin-top: var(--card-set-gap);

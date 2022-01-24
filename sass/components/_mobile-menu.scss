@@ -15,6 +15,7 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      overflow-y: scroll;
     }
     @media screen and (min-width: 768px) {
       position: static;
@@ -28,7 +29,7 @@
     &.is-open {
       position: fixed;
       right: 15px;
-      @media screen and (min-width: 480px) {
+      @media screen and (min-width: 320px) {
         right: calc((100% - 450px) / 2);
       }
       z-index: 2;
