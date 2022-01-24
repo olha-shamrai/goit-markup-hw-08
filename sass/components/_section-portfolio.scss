@@ -12,15 +12,13 @@
     display: flex;
     background-color: var(--background-main-color);
 
+    width: 100%;
+
     &:not(:last-child) {
         margin-bottom: var(--card-set-gap);
         @media screen and (min-width: 768px) {
             margin-bottom: 0;
         }
-    }
-
-    @media screen and (min-width: 480px) {
-        width: 100%;
     }
 
     @media screen and (min-width: 768px) {
