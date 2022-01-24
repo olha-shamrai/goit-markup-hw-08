@@ -111,7 +111,7 @@
             border-radius: 2px;
             background-color: var(--accent-color);
             position: relative;
-            top: 32px;
+            top: 30px;
             bottom: auto;
         }
     }
@@ -227,6 +227,7 @@
 }
 
 .header-social__link {
+    font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 1.22;
